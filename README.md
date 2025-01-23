@@ -16,21 +16,24 @@ Google Console에서 App 생성 후 나온 client_secrets.json 파일을 같은 
 1. requirements.txt 파일의 모듈 설치
 2. console에서 다음 명령어 실행
 
-    python upload_video.py --file="동영상 파일 경로"
-    											--title="동영상 제목"
-    											--description="동영상 설명"
-    											--keywords="동영상 키워드"
-    											--category="카테고리 번호"
-    											--privacyStatus="동영상 상태 (public, private, unlisted)"
-
+```python
+python upload_video.py --file="동영상 파일 경로"
+			--title="동영상 제목"
+			--description="동영상 설명"
+			--keywords="동영상 키워드"
+			--category="카테고리 번호"
+			--privacyStatus="동영상 상태 (public, private, unlisted)"
+```
 											
 3. 다른 파일에서 실행하는 경우 아래 코드 참고
 
-    import os
-    os.systempayload = 'python ./upload_video.py'  
-    payload += f' --file="{filename}"'  
-    payload += f' --title="{writeTitle(info, type)}"'  
-    payload += f' --privacyStatus="{STATUS}"'
-    ...  
+```python
+import os
+os.systempayload = 'python ./upload_video.py'  
+payload += f' --file="{filename}"'  
+payload += f' --title="{writeTitle(info, type)}"'  
+payload += f' --privacyStatus="{STATUS}"'
+...  
     
-    os.system(payload)
+os.system(payload)
+```
