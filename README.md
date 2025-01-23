@@ -29,7 +29,8 @@ python upload_video.py --file="동영상 파일 경로"
 
 ```python
 import os
-os.systempayload = 'python ./upload_video.py'  
+
+payload = 'python ./upload_video.py'  
 payload += f' --file="{filename}"'  
 payload += f' --title="{writeTitle(info, type)}"'  
 payload += f' --privacyStatus="{STATUS}"'
