@@ -32,7 +32,7 @@ import os
 
 payload = 'python ./upload_video.py'  
 payload += f' --file="{filename}"'  
-payload += f' --title="{writeTitle(info, type)}"'  
+payload += f' --title="{title}"'  
 payload += f' --privacyStatus="{STATUS}"'
 ...  
     
