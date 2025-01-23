@@ -16,7 +16,7 @@ Google Console에서 App 생성 후 나온 client_secrets.json 파일을 같은 
 1. requirements.txt 파일의 모듈 설치
 2. console에서 다음 명령어 실행
 
-```python
+```shell
 python upload_video.py --file="동영상 파일 경로"
 			--title="동영상 제목"
 			--description="동영상 설명"
